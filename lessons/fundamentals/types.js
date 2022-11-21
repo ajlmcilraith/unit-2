@@ -122,3 +122,4 @@ console.log("undefined", Boolean(myLastName)); //undefined
 console.log("null", Boolean(isLoggedIn)); //null
 console.log("empty string", Boolean(myAddress)); //empty string
 
+//this is a dummy comment
