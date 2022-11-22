@@ -1,0 +1,80 @@
+/* 
+!BRONZE
+Write two variables. One of those variables will store your name. The other variable will store the name of a friend.
+
+Find out what property you can use to check how long their name is, as well as your own.
+
+Goal: console.log how many letters each of the names are...
+*/
+
+var myName = `Alice`;
+var friendName = `Marina`;
+
+console.log (
+  `
+  My name is ${myName.length} characters long, 
+  and my friend's name is ${friendName.length} characters long
+  `
+)
+
+/*
+
+!SILVER
+
+Write a conditional to see who has the longer name.
+    -Use string interpolation to console.log whose name is longer
+    -Ex: My name is longer than Adam's
+
+*/
+
+
+// if (myname == true)
+
+// >, <, >=, <=, == <== ===
+
+var myLength = myName.length;
+var friendLength = friendName.length;
+
+
+
+if (friendName.length < myName.length) {
+  console.log(
+  `My name is longer than ${friendName}'s.`
+  )
+} else if (friendLength > myLength) {
+  console.log (
+  `${friendName}'s name is longer than mine.`
+  )
+} else {
+  console.log(
+    'Our names are the same length.'
+    )
+}
+
+/*
+!GOLD
+In the console include how many letters difference there are between the names.
+
+Example: Adam's name is shorter than mine by 4 letters. 
+
+*There is also one additional case that should be handled that has not been mentioned so far. See if you can add that to your conditional.
+
+*/
+
+var difference = Math.abs((myLength - friendLength));
+console.log(difference);
+
+if (friendName.length < myName.length) {
+  console.log(
+  `My name is ${difference} characters longer than ${friendName}'s.`
+  )
+} else if (friendLength > myLength) {
+  console.log (
+  `${friendName}'s name is  ${difference} characters longer than mine.`
+  )
+} else {
+  console.log(
+    'Our names are the same length.'
+    )
+}
+
