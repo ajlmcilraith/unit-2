@@ -162,8 +162,8 @@ temp >= 72
 
 // ! Switch Statement
 
-let month = "Jan";
-let totalNumberofDays = 0;
+//let month = "Jan";
+//let totalNumberofDays = 0;
 
 switch (month) {
   case "Dec":
