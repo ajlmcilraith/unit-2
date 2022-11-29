@@ -13,7 +13,6 @@ var currentTime = 15;
 var greeting = "";
 
 
-
 // ! If statement
 
 if (currentTime < 12) {
@@ -21,7 +20,6 @@ if (currentTime < 12) {
   // console.log(`Good Morning`);
   greeting = `Good Morning`;
 }
-
 
 
 // ! If else statement
@@ -35,7 +33,6 @@ if (currentTime < 12) {
   // console.log(`Good Afternoon`);
   greeting = `Good Afternoon`;
 }
-
 
 
 // ! If - else if statement
@@ -55,7 +52,6 @@ if (currentTime < 12) {
 }
 
 console.log(greeting);
-
 
 
 // ! Code Refactoring
@@ -99,10 +95,9 @@ if (currentSeconds % 2 === 0) {
 }
 
 
-
 // ! Ternary Statements
 
-var birthDate = new Date()
+var birthDate = new Date();
 var age = 20;
 
 if (age >= 18) {
@@ -117,14 +112,60 @@ if (age >= 18) {
 // ! (1)                     (2)                              (3)
 age >= 18 ? console.log("T: you can vote") : console.log("T: you can not vote");
 
+// TODO Ternary continued
+// check a quick condition, like an on or off switch
+
+let flag = false; //this determines whether to display a component
+
+//traditional way to do it
+if (flag) {
+  console.log("<Signup />");
+} else {
+  console.log("<Login />");
+}
+
+// Ternary Syntax
+//?  condition ? statement if true : statement if false;
+
+flag ? console.log("<Signup />") : console.log("<Login />");
+
+//Conditional without an else
+if (true) {
+  console.log("true condition");
+}
+
+//Equivalent ternary
+true ? console.log("ternary true condition") : null; //add a null if there is no else
+
+//Chaining Ternaries
+// ? Maybe don't do this though lol
+
+let temp = 72;
+
+if (temp >= 72) {
+  console.log("it's summer");
+} else if (temp >= 62) {
+  Etc;
+}
+
+//colons become elses
+temp >= 72
+  ? console.log("it's summer")
+  : temp >= 62
+  ? console.log("it's fall")
+  : temp >= 32
+  ? console.log("it's winter")
+  : null; //this is still needed
+
+//you never want to go over about 80 characters in width
 
 
 // ! Switch Statement
 
-let month = "Jan"
+let month = "Jan";
 let totalNumberofDays = 0;
 
-switch(month) {
+switch (month) {
   case "Dec":
     totalNumberofDays = 31;
     break;
@@ -140,13 +181,12 @@ console.log(totalNumberofDays);
 
 // * Between every case there needs to be a 'break;' or else the activated code will bleed over into the next case
 
-
 // ? this is equivalent
 
-let month = "Jan"
+let month = "Jan";
 let totalNumberofDays = 0;
 
-switch(month) {
+switch (month) {
   case "Dec": //if two cases have the same output, they can be stacked
   case "Jan":
     totalNumberofDays = 31;
